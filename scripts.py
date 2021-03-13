@@ -20,6 +20,6 @@ if len(profile_names) != 0:
             else:
                 wifi_profile["password"] = password[1]
             wifi_list.append(wifi_profile) 
-with open('wifi.txt', 'w+') as fh:
-    for x in wifi_list:
-        fh.write(f"SSID: {x['ssid']}\nPassword: {x['password']}\n") 
+
+for x in range(len(wifi_list)):
+    print(wifi_list[x]) 
